@@ -87,8 +87,8 @@ function bubbleChart(sample){
 function demographicInfo(sample){
     d3.json(sampleFile).then((data) => {
         let metadata = data.metadata;
-        var result = metadata.filter(item => item.id == sample);
-        var firstresult = result[0];
+        let result = metadata.filter(item => item.id == sample);
+        let firstresult = result[0];
         
 // Select div id = "sample-metadata" to add the key:pair values and clear the existing content in the div
         let sampleMetaData = d3.select("#sample-metadata");
